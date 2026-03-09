@@ -1,0 +1,102 @@
+/* ── App Layout ─────────────────────────────────── */
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+.app__header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.app__title {
+  font-size: 2.25rem;
+  font-weight: 800;
+  margin: 0 0 0.5rem;
+  background: linear-gradient(135deg, #646cff 0%, #9f7aea 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.app__subtitle {
+  margin: 0;
+  font-size: 1rem;
+  color: var(--text-muted, #7f849c);
+}
+
+/* ── Controls ───────────────────────────────────── */
+.app__controls {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.app__search {
+  padding: 0.6rem 1rem;
+  background: var(--card-bg, #1e1e2e);
+  border: 1px solid var(--card-border, #313244);
+  border-radius: 8px;
+  color: var(--text-primary, #cdd6f4);
+  font-size: 0.95rem;
+  font-family: inherit;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.app__search:focus {
+  outline: none;
+  border-color: #646cff;
+}
+
+.app__categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.app__category-btn {
+  padding: 0.4rem 1rem;
+  background: transparent;
+  border: 1px solid var(--card-border, #313244);
+  border-radius: 9999px;
+  color: var(--text-secondary, #a6adc8);
+  font-size: 0.825rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+}
+
+.app__category-btn:hover {
+  background: var(--card-border, #313244);
+  color: var(--text-primary, #cdd6f4);
+}
+
+.app__category-btn--active {
+  background: #646cff;
+  border-color: #646cff;
+  color: #ffffff;
+}
+
+.app__category-btn--active:hover {
+  background: #535bf2;
+  border-color: #535bf2;
+  color: #ffffff;
+}
+
+/* ── Grid ───────────────────────────────────────── */
+.app__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 1.5rem;
+}
+
+.app__empty {
+  text-align: center;
+  color: var(--text-muted, #7f849c);
+  font-size: 1rem;
+  padding: 3rem 0;
+}
+
