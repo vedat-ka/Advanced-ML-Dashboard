@@ -1,0 +1,50 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: dark light;
+  color: #cdd6f4;
+  background-color: #11111b;
+
+  --card-bg: #1e1e2e;
+  --card-border: #313244;
+  --text-primary: #cdd6f4;
+  --text-secondary: #a6adc8;
+  --text-muted: #7f849c;
+  --code-bg: #181825;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1, h2, h3 {
+  line-height: 1.2;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #f4f4f8;
+
+    --card-bg: #ffffff;
+    --card-border: #dde1e7;
+    --text-primary: #213547;
+    --text-secondary: #4a5568;
+    --text-muted: #718096;
+    --code-bg: #f0f0f5;
+  }
+}
+
