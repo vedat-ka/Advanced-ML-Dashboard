@@ -1,4 +1,34 @@
+# Python cache and virtual environments
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
 .venv/
+venv/
+env/
+ENV/
+
+# Local database and environment files
+predictions.db
+.env
+.env.*
+
+# Frontend build and dependency output
+web-ui/node_modules/
+web-ui/dist/
+
+# Generated model artifacts
+trained_models/**/*.joblib
+trained_models/**/*.pkl
+trained_models/**/*_metadata.json
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.idea/.venv/
 __pycache__/
 *.py[cod]
 
