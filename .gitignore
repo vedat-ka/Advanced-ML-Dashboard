@@ -15,6 +15,8 @@ ENV/
 predictions.db
 .env
 .env.*
+web-ui/.env
+web-ui/.env.*
 
 # Frontend build and dependency output
 web-ui/node_modules/
@@ -23,27 +25,11 @@ web-ui/dist/
 # Generated model artifacts
 trained_models/**/*.joblib
 trained_models/**/*.pkl
-trained_models/**/*_metadata.json
-
-# OS and editor files
-.DS_Store
-Thumbs.db
-.idea/.venv/
-__pycache__/
-*.py[cod]
-
-predictions.db
-trained_models/*.pkl
-trained_models/*.json
-trained_models/**/*.pkl
 trained_models/**/*.json
 !trained_models/.gitkeep
 !trained_models/**/.gitkeep
 
-web-ui/node_modules/
-web-ui/dist/
-web-ui/.env
-web-ui/.env.*
-
+# OS and editor files
 .DS_Store
 Thumbs.db
+.idea/
