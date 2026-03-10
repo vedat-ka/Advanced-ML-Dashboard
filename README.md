@@ -1,4 +1,4 @@
-# 03 Advanced ML mit SQLite-Persistenz
+# Advanced ML mit SQLite-Persistenz
 
 Wichtig: Nach einem sauberen Clone sind die Modellordner vorhanden, die meisten Modellartefakte aber noch nicht erzeugt.
 Um lokal nutzbare Modelle zu erhalten, muessen Trainings- oder Finetuning-Schritte ausgefuehrt werden.
